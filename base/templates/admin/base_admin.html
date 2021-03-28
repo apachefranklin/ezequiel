@@ -1,0 +1,43 @@
+{% load static %}
+<html>
+    <head>
+        <title>Ezequiel</title>
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   
+    <!-- plugins:css -->
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">.
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.9.55/css/materialdesignicons.min.css" integrity="sha512-vIgFb4o1CL8iMGoIF7cYiEVFrel13k/BkTGvs0hGfVnlbV6XjAA0M0oEHdWqGdAVRTDID3vIZPOHmKdrMAUChA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.6.3/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" integrity="sha512-Cv93isQdFwaKBV+Z4X8kaVBYWHST58Xb/jVOcV9aRsGSArZsgAnFIhMpDoMDcFNoUtday1hdjn0nGp3+KZyyFw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="{% static 'css/vendor.bundle.base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/vendor.bundle.addons.css' %}">
+    <!-- endinject -->
+    <!-- plugin css for this page -->
+    <link rel="stylesheet" href="../../{% static 'vendors/icheck/skins/all.css">
+
+    <link rel="stylesheet" href="{% static 'css/shared/style.css' %}">
+   
+    <link rel="stylesheet" href="{% static 'css/demo_1/style.css' %}">
+    </head>
+    <body>
+        {% include "admin/includes/navbar.html" %}
+        <div class="container-fluid page-body-wrapper">
+          {% include "admin/includes/side_bar.html" %}
+
+            <div class="main-panel">
+                {% block content %}
+          
+                {% endblock content %}
+            </div>
+        </div>
+    <script src="{% static 'js/vendor.bundle.base.js' %}"></script>
+    <script src="{% static 'js/vendor.bundle.addons.js' %}"></script>
+    <script src="{% static 'js/shared/off-canvas.js' %}"></script>
+    <script src="{% static 'js/shared/misc.js' %}"></script>
+    <script src="{% static 'js/demo_1/dashboard.js' %}"></script>
+    <script src="{% static 'js/shared/jquery.cookie.js' %}" type="text/javascript"></script>
+    </body>
+</html>
+

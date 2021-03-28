@@ -1,0 +1,21 @@
+body{
+    background-image: url("../images/marina.jpg");
+    background-size: 100%;
+    background-position: fixed;
+}
+.my-auto{
+    margin-top: auto;
+    margin-bottom: auto;  
+}
+div.cover-body{
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    margin: 0px;
+    bottom: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(34, 48, 59, 0.8);
+}
